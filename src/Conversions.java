@@ -7,6 +7,7 @@ public class Conversions {
     }
 
     public double dollarToEuro(double dollar) {
+        // divide euro conversion date
         return dollar / 1.1;
     }
 
