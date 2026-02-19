@@ -22,7 +22,8 @@ public class Conversions {
     }
 
     public String integerToString(int val) {
-        return "";
+        // convert integer to string
+        return String.valueOf(val);
     }
 
     public String switchCase(String val) {

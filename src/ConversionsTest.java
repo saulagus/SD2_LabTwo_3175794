@@ -52,5 +52,5 @@ public class ConversionsTest {
         assertEquals("0", converter.integerToString(0));
     }
 
-    
+
 }
