@@ -6,6 +6,7 @@ public class ConversionsTest {
 
     Conversions converter = new Conversions();
 
+    // test euroToDollar
     @Test
     public void euroToDollar() {
         // positive

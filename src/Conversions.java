@@ -2,7 +2,8 @@
 public class Conversions {
 
     public double euroToDollar(double euro) {
-        return 0.0;
+        // random conversion rate
+        return euro * 1.1;
     }
 
     public double dollarToEuro(double dollar) {
