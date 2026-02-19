@@ -40,4 +40,17 @@ public class ConversionsTest {
             converter.stringToInteger(null);
         });
     }
+
+    // test integerToString - pos, neg, zero
+    @Test
+    public void integerToString() {
+        // positive
+        assertEquals("99", converter.integerToString(99));
+        // negative
+        assertEquals("-99", converter.integerToString(-99));
+        // zero
+        assertEquals("0", converter.integerToString(0));
+    }
+
+    
 }
