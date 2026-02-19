@@ -16,4 +16,15 @@ public class ConversionsTest {
         // zero
         assertEquals(0.0, converter.euroToDollar(0.0), 0.01);
     }
+
+    // test dollarToEuro
+    @Test
+    public void dollarToEuro() {
+        // positive
+        assertEquals(10.0, converter.dollarToEuro(11.0), 0.01);
+        // negative
+        assertEquals(-5.0, converter.dollarToEuro(-5.5), 0.01);
+        // zero
+        assertEquals(0.0, converter.dollarToEuro(0.0), 0.01);
+    }
 }
