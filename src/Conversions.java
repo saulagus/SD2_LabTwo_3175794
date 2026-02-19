@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 // Saul Agustin Güemes Enriquez - 3175794
 public class Conversions {
 
@@ -27,6 +29,21 @@ public class Conversions {
     }
 
     public String switchCase(String val) {
-        return "";
+        // check for null
+        if (val == null ) return null;
+        // check for empty string
+        if (val.isEmpty()) return "";
+        // convert string to char array
+        char[] valArr = val.toCharArray();
+        // loop through char array
+        for (int i = 0; i < valArr.length; i++) {
+            // check if char is uppercase
+            if (Character.isUpperCase(valArr[i]))
+                valArr[i] = Character.toLowerCase(valArr[i]);
+            else
+                valArr[i] = Character.toUpperCase(valArr[i]);
+        }
+        // convert char array to string
+        return new String(valArr);
     }
 }
