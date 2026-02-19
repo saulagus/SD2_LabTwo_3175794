@@ -12,7 +12,13 @@ public class Conversions {
     }
 
     public int stringToInteger(String val) {
-        return 0;
+        // check for null or empty string
+        if (val == null || val.isEmpty()) {
+            throw new NumberFormatException();
+        } else {
+            // convert string to integer
+            return Integer.parseInt(val);
+        }
     }
 
     public String integerToString(int val) {
