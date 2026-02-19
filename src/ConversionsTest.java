@@ -52,5 +52,15 @@ public class ConversionsTest {
         assertEquals("0", converter.integerToString(0));
     }
 
+    // test switchCase - mixed, empty, null
+    @Test
+    public void switchCase() {
+        // mixed
+        assertEquals("hELLO", converter.switchCase("Hello"));
+        // empty
+        assertEquals("", converter.switchCase(""));
+        // null
+        assertNull(converter.switchCase(null));
+    }
 
 }
